@@ -30,6 +30,26 @@ Personal configuration files for Claude Code and shell environment.
   - Extended thinking budget aliases (claude-quick, claude-deep)
   - MCP tool search configuration
   - Environment variables
+  - **Note:** Secrets removed - stored in `~/.zshrc.local` (not tracked)
+
+## Secrets Management
+
+API keys and passwords are **not tracked** in this repository for security:
+
+- Secrets stored in `~/.zshrc.local` (gitignored)
+- `.zshrc` sources `.zshrc.local` automatically
+- Template comments in `.zshrc` show what secrets to add
+
+**Create your `.zshrc.local`:**
+```bash
+cat > ~/.zshrc.local << 'EOF'
+# Local secrets
+export XAI_API_KEY="your-key"
+export OPENAI_API_KEY="your-key"
+export KEYSTORE_PASSWORD="your-password"
+# ... other secrets
+EOF
+```
 
 ## Installation
 
