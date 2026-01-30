@@ -1,0 +1,10 @@
+# Local secrets (not tracked in git)
+.zshrc.local
+
+# macOS
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
